@@ -16,9 +16,12 @@ namespace RelicRituaryAscension
             {
                 stringBuilder.AppendLine("   " + pawn.LabelCap);
                 Find.StoryWatcher.statsRecord.colonistsLaunched++;
-                pawn.Destroy();
             }
             GameVictoryUtility.ShowCredits(GameVictoryUtility.MakeEndCredits("RelicRituaryAscension_GameOverRelicRitualInvokedIntro".Translate(), "RelicRituaryAscension_GameOverRelicRitualInvokedEnding".Translate(), stringBuilder.ToString(), "RelicRituaryAscension_GameOverColonistsAscended", pawns), SongDefOf.ArchonexusVictorySong);
+            foreach (Pawn pawn in pawns)
+            {
+                pawn.Destroy();
+            }
         }
     }
 }

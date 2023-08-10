@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualBehaviorDef>
+    <defName>RelicAscension</defName>
+    <workerClass>RitualBehaviorWorker_RelicAscension</workerClass>
+    <durationTicks>5000</durationTicks>
+    <roles>
+      <li Class="RitualRoleTag">
+        <label>initiator</label>
+        <tag>Leader</tag>
+        <id>initiator</id>
+        <precept>IdeoRole_Leader</precept>
+        <required>true</required>
+        <maxCount>1</maxCount>
+        <countsAsParticipant>True</countsAsParticipant>
+        <allowChild>false</allowChild>
+        <mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+      </li>
+    </roles>
+	<spectatorsLabel>Participants</spectatorsLabel>
+    <spectatorGerund>participate</spectatorGerund>
+    <stages>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+        <allowedSpectateSidesOverride>Vertical</allowedSpectateSidesOverride>
+        <spectateDistanceOverride>1</spectateDistanceOverride>
+        <spectatorsRequired>false</spectatorsRequired>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>SpeakOnCell_Leader</dutyDef>
+            <speakerInteraction>Speech_Leader</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_BesideThing" />
+            </customPositions>
+          </li>
+        </roleBehaviors>
+        <visualEffectDef>Speech</visualEffectDef>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+
+</Defs>

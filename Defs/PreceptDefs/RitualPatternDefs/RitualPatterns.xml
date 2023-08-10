@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualPatternDef ParentName="SpeechPatternBase">
+    <defName>RelicAscension</defName>
+    <ritualBehavior>RelicAscension</ritualBehavior>
+    <ritualObligationTargetFilter>RitualSpotIdeogramOrAltar</ritualObligationTargetFilter>
+    <ritualTargetFilter>AltarIdeogramOrRitualSpot</ritualTargetFilter>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+    <ritualOnlyForIdeoMembers>true</ritualOnlyForIdeoMembers>
+    <canMergeGizmosFromDifferentIdeos>false</canMergeGizmosFromDifferentIdeos>
+	<ritualOutcomeEffect>RelicAscension</ritualOutcomeEffect>
+  </RitualPatternDef>
+
+</Defs>

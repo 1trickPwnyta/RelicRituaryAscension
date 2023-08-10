@@ -54,10 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Debug.cs" />
+    <Compile Include="RelicAscensionCountdown.cs" />
     <Compile Include="RelicRituaryAscensionMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RitualBehaviorWorker_RelicAscension.cs" />
     <Compile Include="RitualOutcomeEffectWorker_RelicAscension.cs" />
+    <Compile Include="EndGameTimer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

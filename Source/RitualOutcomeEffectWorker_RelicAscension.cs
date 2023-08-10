@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using RelicRituaryAscension;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -33,21 +34,9 @@ namespace RimWorld
         {
             SoundDefOf.Archotech_Invoked.PlayOneShotOnCamera();
             ScreenFader.StartFade(Color.white, 5f);
-            System.Timers.Timer timer = new System.Timers.Timer();
-            timer.Elapsed += new System.Timers.ElapsedEventHandler(delegate(object source, ElapsedEventArgs e)
-            {
-                timer.Stop();
-                StringBuilder stringBuilder = new StringBuilder();
-                List<Pawn> list = totalPresence.Keys.ToList();
-                foreach (Pawn pawn in list)
-                {
-                    stringBuilder.AppendLine("   " + pawn.LabelCap);
-                    Find.StoryWatcher.statsRecord.colonistsLaunched++;
-                }
-                GameVictoryUtility.ShowCredits(GameVictoryUtility.MakeEndCredits("RelicRituaryAscension_GameOverRelicRitualInvokedIntro".Translate(), "RelicRituaryAscension_GameOverRelicRitualInvokedEnding".Translate(), stringBuilder.ToString(), "RelicRituaryAscension_GameOverColonistsAscended", list), SongDefOf.ArchonexusVictorySong);
-            });
-            timer.Interval = 5000;
-            timer.Start();
+            EndGameTimer.timeLeft = 5f;
+            GameObject.Find("GameRoot").AddComponent<EndGameTimer>();
+            RelicAscensionCountdown.pawns = totalPresence.Keys.ToList();
         }
 
         public override OutcomeChance GetForcedOutcome(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments)

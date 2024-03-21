@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<RelicRituaryAscension_CantStartRitualRelicsNotPresent>All the ideoligion's relics must be present and installed in reliquaries.</RelicRituaryAscension_CantStartRitualRelicsNotPresent>
+	<RelicRituaryAscension_GameOverRelicRitualInvokedIntro>You've completed the ascension ceremony. The world fills with a blinding light and time seems to slow...\n\n</RelicRituaryAscension_GameOverRelicRitualInvokedIntro>
+	<RelicRituaryAscension_GameOverRelicRitualInvokedEnding>Your colony gathers around the collected artifacts. They begin to glow, and slowly envelop you in a bright light. When the light fades, everyone has vanished without a trace - they are now one with the gods!</RelicRituaryAscension_GameOverRelicRitualInvokedEnding>
+	<RelicRituaryAscension_GameOverColonistsAscended>These colonists have ascended:\n\n{0}</RelicRituaryAscension_GameOverColonistsAscended>
+</LanguageData>

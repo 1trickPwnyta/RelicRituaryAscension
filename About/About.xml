@@ -5,14 +5,13 @@
 	<packageId>relicrituaryascension.1trickPwnyta</packageId>
 	<supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<description>
 Adds a new way to end the game. You can add a relic ritual to your ideology in the Ideology Editor, which requires all the ideology's relics installed in reliquaries in the ritual room in order to perform. Once performed, all pawns who took part in the ritual will ascend and the credits will roll.
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-If you enjoy my work and want to support me and my family, I take donations at:
-https://ko-fi.com/1trickpwnyta
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=== Updates ===
+03/21/2024: Update to 1.5
 	</description>
 	<url>https://github.com/1trickPwnyta/RelicRituaryAscension</url>
 </ModMetaData>

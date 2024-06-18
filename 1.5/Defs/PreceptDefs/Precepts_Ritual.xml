@@ -13,7 +13,6 @@
 	<useRepeatPenalty>false</useRepeatPenalty>
     <countsTowardsPreceptLimit>true</countsTowardsPreceptLimit>
     <selectionWeight>1.0</selectionWeight>
-    <classic>true</classic>
   </PreceptDef>
 
 </Defs>

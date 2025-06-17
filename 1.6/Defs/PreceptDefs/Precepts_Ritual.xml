@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef>
+    <defName>RelicAscension</defName>
+    <label>ascension ceremony</label>
+    <description>A ceremony initiated by the ideoligion's leader, among the presence of all the ideoligion's relics, that causes all participants to ascend to a higher plane of consciousness.</description>
+    <issue>Ritual</issue>
+	<preceptClass>Precept_Ritual</preceptClass>
+	<ritualPatternBase>RelicAscension</ritualPatternBase>
+    <iconPath>UI/RelicAscension</iconPath>
+	<visible>true</visible>
+	<useRepeatPenalty>false</useRepeatPenalty>
+    <countsTowardsPreceptLimit>true</countsTowardsPreceptLimit>
+    <selectionWeight>1.0</selectionWeight>
+  </PreceptDef>
+
+</Defs>

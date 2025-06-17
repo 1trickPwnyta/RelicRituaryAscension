@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualOutcomeEffectDef>
+    <defName>RelicAscension</defName>
+    <description>Participants will ascend.</description>
+    <workerClass>RitualOutcomeEffectWorker_RelicAscension</workerClass>
+	<comps>
+	  <li Class="RitualOutcomeComp_RoleChangeParticipants">
+        <label>required spectator count</label>
+      </li>
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Successful</label>
+        <chance>1</chance>
+        <description>The ascension ceremony was completed.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+
+</Defs>
